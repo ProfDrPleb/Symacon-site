@@ -3,20 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <title>Welcome to Symacon</title>
-
   <style>
-    body{
-      text-align: center;
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: #f9f9f9;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    .logo {
+      max-width: 300px; /* maximale Breite des Logos */
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-weight: normal;
     }
   </style>
-
 </head>
 <body>
-
-  <h1>Welcome to Symacon</h1>
-  <h2>The Website will soon be online</h2>
-
+  <a href="symacon.png">
+    <img src="logo.png" alt="Symacon Logo" class="logo">
+  </a>
+  <h2>The website will soon be online</h2>
 </body>
 </html>
-
-
