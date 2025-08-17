@@ -1,28 +1,25 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Click to see donkey</title>
+  <style>
+    #donkey {
+      display: none; /* Bild ist anfangs versteckt */
+      margin-top: 10px;
+      max-width: 300px;
+    }
+  </style>
 </head>
 <body>
+  <button onclick="showImage()">Click to see donkey</button>
 
-    <a href="https://profile-images.xing.com/images/74f5b23526bca38951df5ef259505bf4-3/j%C3%A9r%C3%B4me-hochuli.1024x1024.jpg">
-    <img src="https://profile-images.xing.com/images/74f5b23526bca38951df5ef259505bf4-3/j%C3%A9r%C3%B4me-hochuli.1024x1024.jpg" alt="Beschreibung des Bildes" width="300">
-  </a>
-    
-    <h1 id="tit">TITLE</h1>
-    <button>Clickme
-        
-    </button>
+  <img id="donkey" src="https://profile-images.xing.com/images/74f5b23526bca38951df5ef259505bf4-3/j%C3%A9r%C3%B4me-hochuli.1024x1024.jpg" alt="A donkey">
+
+  <script>
+    function showImage() {
+      document.getElementById("donkey").style.display = "block";
+    }
+  </script>
 </body>
-
-<style>
-#tit{
-    background-color:red!
-}
-</style>
 </html>
-
